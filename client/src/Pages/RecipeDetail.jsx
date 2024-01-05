@@ -8,7 +8,7 @@ const RecipeDetail = () => {
   const [recipe, setRecipe] = useState(null);
 
   useEffect(() => {
-    axios.get(`/recipe/${id}`)
+    axios.get(`https://ecofood.onrender.com/api/v1/recipe/${id}`)
       .then(response => setRecipe(response.data.data));
   }, [id]);
 
