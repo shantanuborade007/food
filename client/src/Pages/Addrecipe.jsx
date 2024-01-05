@@ -80,7 +80,7 @@ const handleSubmit = async (event) => {
       formData.append('instructions', JSON.stringify(instructions));
       formData.append('image', image);
 
-      const { data } = await axios.post('/newrecipes', formData);
+      const { data } = await axios.post('https://ecofood.onrender.com/api/v1/newrecipes', formData);
 
       if (data.success === true) {
           // Reset form fields or perform any necessary actions
