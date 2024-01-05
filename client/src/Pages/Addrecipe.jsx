@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import ImagesUploader from 'react-images-upload';
 import axios from 'axios';
 import toast from 'react-hot-toast';
 import food3 from '../assets/food3.png'
