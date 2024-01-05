@@ -21,9 +21,17 @@ app.use(fileupload(
     }
 ));
 
+const allowedOrigins = [
+  'https://food-divu.vercel.app',
+  'https://food-divu-q4loqq8wi-shantanus-projects-66e3bf71.vercel.app',
+  'https://food-divu-git-main-shantanus-projects-66e3bf71.vercel.app'
+  // Add as many origins as needed
+];
+
 app.use(cors({
-    origin: 'https://food-divu-kosm3v70t-shantanus-projects-66e3bf71.vercel.app' // replace with the URL of your frontend server
-  }));
+  origin: allowedOrigins
+}));
+
 
 const db=require("./config/database");
 db.connect();
