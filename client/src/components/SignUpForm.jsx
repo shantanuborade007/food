@@ -46,7 +46,7 @@ export default function SignUpForm({setisloggedIn}) {
     const password = data.get('password');
     const role = 'user'; // default role
   
-    fetch('/signup', {
+    fetch('https://ecofood.onrender.com/api/v1/signup', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
