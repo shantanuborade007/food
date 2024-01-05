@@ -22,7 +22,7 @@ app.use(fileupload(
 ));
 
 app.use(cors({
-    origin: 'http://localhost:3000' // replace with the URL of your frontend server
+    origin: 'https://food-tau-ruddy.vercel.app/' // replace with the URL of your frontend server
   }));
 
 const db=require("./config/database");
