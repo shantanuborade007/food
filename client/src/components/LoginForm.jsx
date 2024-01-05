@@ -32,7 +32,7 @@ import axios from 'axios';
       e.preventDefault();
   
   try {
-    const response = await axios.post('/login', {
+    const response = await axios.post('https://ecofood.onrender.com/api/v1/login', {
       email: values.email,
       password: values.pass
     });
