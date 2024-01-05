@@ -10,7 +10,7 @@ const View = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    axios.get('/allrecipes')
+    axios.get('https://ecofood.onrender.com/api/v1/allrecipes')
       .then(response => {
         setRecipes(response.data.data);
         setLoading(false);
